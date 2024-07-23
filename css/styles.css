@@ -6,10 +6,69 @@
     box-sizing: border-box;
 }
 
-.navbar li a {
-    list-style: none;
+#englobador {
+    background-color: #A1EFB7;
+    width: 100%;
+    height: 11.5rem;
+    position: absolute;
 }
 
+
+/* Estilo del logo */
+#logo_nav {
+    height: 90%; /* Controla la altura máxima del logo */
+    margin-right: 10px; /* Espacio entre el logo y la barra de navegación */
+    width: 30%;
+    margin: 0%;
+    position: relative;
+    z-index: 2;
+}
+
+
+#img_logo{
+    padding-top: 10px;
+    height: 90%;
+}
+
+#oscuro {
+    padding-left: 300px;
+    padding-top: 50px;
+    background-color: #5A7562;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+#barra {
+    flex-grow: 1; /* Permite a la barra de navegación ocupar todo el espacio disponible */
+    display: inline-block;
+    margin-top: 0%;
+
+}
+
+/* Contenedor de la barra de navegación: utiliza flexbox para alinear los elementos horizontalmente */
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Permite a la barra de navegación ocupar todo el espacio disponible */
+    justify-content: flex-end; /* Alinea la barra de navegación a la derecha */
+}
+
+/* Elementos de la lista de la barra de navegación: añade margen derecho */
+.navbar li {
+    margin-right: 20px;
+}
+
+/* Elimina el margen derecho del último elemento de la lista */
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+/* Enlaces de la barra de navegación: sin subrayado y color negro */
 .navbar li a {
     text-decoration: none;
     color: #000000;
@@ -33,26 +92,28 @@
     background-size: cover;
 }
 
-
-/* el siguiente codigo esta comentado porque al no tener posicionamiento, me tapaba los demas elementos */
-/*
-#englobador {
-    background-color: #A1EFB7;
-    width: 100%;
-    height: 11.5rem
+/* Ícono de búsqueda: añade margen derecho */
+.navbar form i {
+    margin-right: 5px;
 }
 
-#oscuro {
-    background-color: #5A7562;
-    width: 100%;
-    height: 50%;
+/* Campo de entrada de búsqueda: padding y margen derecho */
+.navbar form input[type="search"] {
+    padding: 5px;
+    margin-right: 5px;
 }
 
-#logo_nav 
-{
-
-    width:50% ;
+/* Botón de búsqueda: padding */
+.navbar form button {
+    padding: 5px 10px;
 }
+
+/* Íconos de Material: tamaño de fuente y color */
+.navbar i.material-icons {
+    font-size: 24px;
+    color: #000000;
+}
+
 
 #logo_footer 
 {
@@ -186,3 +247,4 @@ p
     height: 280px;
     width: 250px;
 }
+
