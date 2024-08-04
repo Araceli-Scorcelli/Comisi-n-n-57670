@@ -288,17 +288,17 @@ body{
     gap: 10px;
 }
 
-.col_foot nav ul {
+.col_foot ul {
     list-style: none; 
     padding: 0;
 }
 
-.col_foot nav ul li {
+.col_foot ul li {
     margin-bottom: 10px; 
     font-family: jost;
 }
 
-.col_foot nav ul li a {
+.col_foot ul li a {
     text-decoration: none; 
     color: #ffffff; 
     font-size: 15px;
@@ -382,7 +382,7 @@ body{
         margin: .5rem; 
     }
 
-    .col_foot nav ul li {
+    .col_foot ul li {
         margin-bottom: 5px; 
     }
 
