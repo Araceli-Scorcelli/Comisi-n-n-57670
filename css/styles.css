@@ -19,6 +19,7 @@ body{
     background-repeat: no-repeat;
     min-height: 500px; 
     margin-top: 80px;
+    padding-bottom: 5px;
 
 }
 
@@ -618,6 +619,44 @@ h2 {
 .fondo_texto h2{
     font-weight: 450;
 }
+
+@media (max-width: 768px) {
+    #img_invert {
+        height: 200px;
+    }
+
+    .content_flex img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content_inverso {
+        margin-left: 10%;
+    }
+
+    .imgnosotros {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_flex {
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content_flex img {
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    .content_flex div {
+        max-width: 100%;
+    }
+}
+
+
 
 /* ------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------- */
