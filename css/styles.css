@@ -646,6 +646,7 @@ h2 {
   padding-top: 50px;
   padding-left: 10px;
   border: 1px solid black;
+  width: 33%;
 }
 
 .noti-blog-foto {
@@ -747,6 +748,9 @@ h3 {
   #header-logo {
     width: 30%;
   }
+  .noti-blog .parrafos p {
+    font-size: 14px;
+  }
 }
 @media (max-width: 950px) {
   .banner_class {
@@ -758,12 +762,8 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-@media (max-width: 768px) {
-  #banner_contact {
-    width: 100%;
-    height: 135px;
-    margin-top: 3px;
+  .noti-blog .parrafos h3 {
+    font-size: 15px;
   }
 }
 @media (max-width: 480px) {
@@ -772,6 +772,12 @@ h3 {
     height: 115px;
     margin-top: 2px;
   }
+  .noti-blog-foto {
+    display: none;
+  }
+  .noti-blog .parrafos p {
+    font-size: 12px;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   #banner_contact {
@@ -779,6 +785,9 @@ h3 {
     height: 180px;
     object-fit: cover;
     margin-top: 5px;
+  }
+  #img_invert {
+    height: 250px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -811,6 +820,11 @@ h3 {
   }
 }
 @media (max-width: 768px) {
+  #banner_contact {
+    width: 100%;
+    height: 135px;
+    margin-top: 3px;
+  }
   .grid_container {
     grid-template-areas: "prod_1" "prod_2" "prod_3" "prod_4";
     grid-template-columns: 1fr;
@@ -855,6 +869,9 @@ h3 {
   .content_flex div {
     max-width: 100%;
   }
+  .noti-blog-foto {
+    height: 70px;
+  }
 }
 @media (max-width: 400px) {
   .grid_container {
@@ -886,6 +903,10 @@ h3 {
     font-size: 12px;
   }
 }
+.noti-blog .parrafos p {
+  font-size: 10px;
+}
+
 @media (max-width: 1082px) {
   .col_foot {
     flex: 1 1 30%;
@@ -1005,6 +1026,21 @@ h3 {
   order: 2;
   margin-left: 20px;
   margin-right: 0;
+}
+
+@media (max-width: 350px) {
+  .section_chats .chats {
+    display: block !important;
+  }
+  .radioImg {
+    display: block;
+  }
+  .texto_chats {
+    display: block;
+  }
+  .noti-blog .parrafos h3 {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

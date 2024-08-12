@@ -3,14 +3,19 @@
     #banner {
         height: 500px;
     }
-
 }
 
 @media only screen and (max-width: 1225px) {
     #header-logo {
         width: 30%;
     }
-
+    .noti-blog{
+        .parrafos{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 // Media Queries para banner
@@ -25,15 +30,12 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-}
-
-// Media Queries para el banner contacto botom
-@media (max-width: 768px) {
-
-    #banner_contact {
-        width: 100%;
-        height: 135px; 
-        margin-top: 3px; 
+    .noti-blog{
+        .parrafos{
+            h3{
+                font-size: 15px;
+            }
+        }
     }
 }
 
@@ -44,6 +46,16 @@
         height: 115px; 
         margin-top: 2px; 
     }
+    .noti-blog-foto{
+        display: none;
+    }
+    .noti-blog{
+        .parrafos{
+            p{
+                font-size: 12px;
+            }
+        }
+    }
 }
 
 
@@ -53,6 +65,9 @@
         height: 180px;
         object-fit: cover;
         margin-top: 5px
+    }
+    #img_invert{
+        height: 250px;
     }
 }
 
@@ -96,6 +111,13 @@
 }
 
 @media (max-width: 768px) {
+
+    #banner_contact {
+        width: 100%;
+        height: 135px; 
+        margin-top: 3px; 
+    }
+
     .grid_container {
         grid-template-areas: 
         "prod_1"
@@ -161,6 +183,9 @@
     .content_flex div {
         max-width: 100%;
     }
+    .noti-blog-foto{
+        height: 70px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -206,7 +231,13 @@
     }
     
     }
-    
+    .noti-blog{
+        .parrafos{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
 
 // Media Queries para footer
 @media (max-width: 1082px) {
@@ -355,4 +386,25 @@
     }
 }
 
-
+@media (max-width: 350px){
+    .section_chats{
+        .chats{
+            display: block !important;
+        }
+    }
+    .radioImg{
+        display: block;
+    }
+    .texto_chats{
+        display: block;
+    }
+    .noti-blog{
+        .parrafos{
+            h3{
+                font-size: 12px;
+            }
+        }
+        
+    }
+    
+}
