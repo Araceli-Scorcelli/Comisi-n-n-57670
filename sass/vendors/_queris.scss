@@ -1,0 +1,360 @@
+
+
+// Media Queries para el banner general top
+@media only screen and (min-width: 1300px) {
+    #banner {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 1225px) {
+    #header-logo {
+        width: 30%;
+    }
+
+}
+
+// Media Queries para banner
+@media (max-width: 950px) {
+    .banner_class {
+        display: none;
+    }
+
+    #banner {
+        background-image: url(../assets/img/banner.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+// Media Queries para el banner contacto botom
+@media (max-width: 768px) {
+
+    #banner_contact {
+        width: 100%;
+        height: 135px; 
+        margin-top: 3px; 
+    }
+}
+
+@media (max-width: 480px) {
+
+    #banner_contact {
+        width: 100%;
+        height: 115px; 
+        margin-top: 2px; 
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #banner_contact {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        margin-top: 5px
+    }
+}
+
+// Media Queries para la navegación
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        border: 1px solid white;
+        border-top: none;
+        border-right: none;
+    }
+    .navbar-collapse {
+        background-color: rgba(15, 173, 115, 0.5);
+    }
+    
+    .logo_flotante #trust {
+        height: 130%;
+        width: 100%;
+    }
+}
+
+// Media Queries para grid de productos
+@media (min-width: 820px) and (max-width: 1024px) {
+    .grid_container {
+        grid-template-areas: 
+        "prod_1 prod_2"
+        "prod_3 prod_4";
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_estrella {
+        max-width: 10%;
+    }
+
+    .det_prod {
+        font-size: 16px;
+    }
+
+    .det_prod2 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid_container {
+        grid-template-areas: 
+        "prod_1"
+        "prod_2"
+        "prod_3"
+        "prod_4";
+        grid-template-columns: 1fr;
+    }
+    .grid_container > * {
+        margin: 10px;
+    }
+
+    .img_estrella {
+        max-width: 10%;
+    }
+
+    #body {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .swipes {
+        grid-template-areas: 
+        "prod_1 prod_2"
+        "prod_3 prod_4"
+        "prod_5 prod_6"
+        "prod_7 prod_8"
+        "prod_9 prod_10"
+        "prod_11 prod_12";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .swipes > * {
+        margin: 10px;
+    }
+
+    #img_invert {
+        height: 200px;
+    }
+
+    .content_flex img {
+        height: 150px;
+    }
+
+    .content_inverso {
+        margin-left: 10%;
+    }
+
+    .imgnosotros {
+        margin-left: 20px;
+    }
+
+    .content_flex {
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content_flex img {
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    .content_flex div {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .grid_container {
+        grid-template-areas: 
+        "prod_1"
+        "prod_2"
+        "prod_3"
+        "prod_4";
+        grid-template-columns: 1fr;
+    }
+    .grid_container > * {
+        margin: 5px;
+    }
+
+    .det_prod {
+        width: 90%;
+        bottom: 5px;
+        padding: 5px;
+    }
+
+    .img_estrella {
+        max-width: 10%;
+    }
+
+    .det_prod {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 819px) {
+
+.det_prod2 {
+    font-size: 12px;
+}
+
+}
+
+@media (min-width: 250px) and (max-width: 399px) {
+
+    .det_prod2 {
+        font-size: 12px;
+    }
+    
+    }
+    
+
+// Media Queries para footer
+@media (max-width: 1082px) {
+    .col_foot {
+        flex: 1 1 30%;
+        max-width: 30%;
+        padding-left: 10px;
+    }
+
+    #logo_footer {
+        flex: 1 1 30%;
+        max-width: 30%;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 1082px) {
+    #logo_footer {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    #div_footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col_foot {
+        flex: none;
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .col_foot form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col_foot form label,
+    .col_foot form input {
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    .col_foot form button {
+        margin-bottom: 10px;
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    .col_foot {
+        margin: .5rem;
+    }
+
+    .col_foot ul li {
+        margin-bottom: 5px;
+    }
+
+    .col_foot form label,
+    .col_foot form input,
+    .col_foot form button {
+        margin-bottom: 5px;
+    }
+
+    .noti-blog p {
+        font-size: 10px;
+    }
+    
+    .noti-blog h2 {
+        font-size: 15px;
+    }
+
+    .noti-blog-foto {
+        height: 75px;
+    }
+}
+
+// Media Queries para chats
+.section_chats {
+    display: block;
+
+    p,
+    h3 {
+        color: #000;
+        display: block;
+    }
+
+    .chats {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #ffffff8f;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        img.radioImg {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        h3 {
+            color: black;
+            font-size: 20px;
+            display: block;
+        }
+    }
+
+    .chats div {
+        display: inline-block;
+    }
+
+    .radioimg {
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    #foto1,
+    #foto2 {
+        flex: 0 0 auto;
+    }
+
+    #chat1,
+    #chat2 {
+        padding-left: 30px;
+        flex: 1;
+    }
+
+    #foto2 {
+        order: 1;
+    }
+
+    .chat2 .radioImg {
+        order: 2;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+}
+
+

@@ -1,0 +1,48 @@
+/* scss/layout/_footer.scss */
+#div_footer {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;  
+    padding: 20px;
+    background-color: #5A7562;
+
+    .col_foot {
+        flex: 1;
+        margin: .625rem; 
+        padding-left: 20px;
+        gap: 10px;
+
+        ul {
+            list-style: none; 
+            padding: 0;
+
+            li {
+                margin-bottom: 10px; 
+                font-family: jost;
+
+                a {
+                    text-decoration: none; 
+                    color: #ffffff; 
+                    font-size: 15px;
+                }
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; 
+            width: 150px;
+
+            label,
+            input {
+                margin-bottom: 10px; 
+                color: #ffffff;
+            }
+
+            button {
+                margin-bottom: 10px; 
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+// views/productos.scss
+
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.swipes {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "prod_1 prod_2 prod_3 prod_4"
+        "prod_5 prod_6 prod_7 prod_8"
+        "prod_9 prod_10 prod_11 prod_12";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+
+    > * {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
+
+.sub_products {
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave para las tarjetas */
+
+    .det_prod2 {
+        position: absolute;
+        bottom: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+        box-sizing: border-box;
+        text-align: center;
+
+        p {
+            &.titulo2 {
+                font-family: 'Jost';
+                font-size: 1em;
+                font-weight: bold;
+                color: #4A4A4A;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                margin: 2px 0;
+            }
+
+            &.precio2 {
+                font-size: 1em;
+                font-weight: bold;
+                color: #000;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                margin: 2px 0;
+            }
+
+            &.descripcion2 {
+                font-size: 1em;
+                color: #333;
+                margin: 2px 0;
+                line-height: 1.2;
+                font-family: 'Ubuntu Mono';
+            }
+        }
+    }
+
+    .img_estrella_prod {
+        max-width: 25%;
+        height: auto;
+        margin-top: 2px;
+    }
+}
+
+h2 {
+    font-family: 'Jost';
+    font-size: 2em;
+    font-weight: 250;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}

@@ -1,0 +1,118 @@
+// views/blog.scss
+
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+#linea-swipe {
+    background-color: black;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+}
+
+.noticias {
+    position: relative;
+    background-color: white;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.noti-blog {
+    padding-top: 50px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+.noti-blog-foto {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.noti-blog p {
+    color: black;
+}
+
+.comments {
+    height: 30px;
+}
+
+hr {
+    color: black;
+}
+
+.section_chats {
+    display: block;
+}
+
+.section_chats p,
+.section_chats h3 {
+    color: #000;
+    display: block;
+}
+
+.chats {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #ffffff8f;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chats div {
+    display: inline-block;
+}
+
+.radioimg {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#foto1,
+#foto2 {
+    flex: 0 0 auto;
+}
+
+#chat1,
+#chat2 {
+    padding-left: 30px;
+    flex: 1;
+}
+
+#foto2 {
+    order: 1;
+}
+
+.chats img.radioImg {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.chat2 .radioImg {
+    order: 2;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.chats h3 {
+    color: black;
+    font-size: 20px;
+    display: block;
+}
+
+h2 {
+    font-weight: 400;
+    text-align: left;
+}
+
+h3 {
+    font-weight: 400;
+    text-align: left;
+    color:#000;
+    text-shadow: 2px 3px 1px #cd8d8d;
+}
+

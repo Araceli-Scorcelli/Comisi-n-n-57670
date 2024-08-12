@@ -1,0 +1,33 @@
+// Mixin para el padding
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    padding: $top $right $bottom $left;
+}
+
+// Mixin para border-radius
+@mixin border-radius($radius: 5px) {
+    border-radius: $radius;
+}
+
+// Mixin para box-shadow
+@mixin box-shadow($shadow: 0 4px 8px rgba(0, 0, 0, 0.1)) {
+    box-shadow: $shadow;
+}
+
+//mixins buttons.scss
+%btn-common {
+    color: white;
+    font-family: jost;
+    border-color: white;
+    box-shadow: 0px 7px 13px 0px rgb(1, 92, 49);
+    border-radius: $border-radius;
+    margin-right: 5px;
+}
+
+%form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    @include border-radius($border-radius);
+    font-family: $font-family-jost;
+    font-size: 1em;
+}

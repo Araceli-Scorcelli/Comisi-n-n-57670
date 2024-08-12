@@ -1,0 +1,79 @@
+// views/sobre-nosotros.scss
+
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+.titulada {
+    top: -150px;
+    position: relative;
+    width: 10%;
+
+    .img_titulo {
+        display: inline-block;
+        position: absolute;
+        z-index: 10;
+        width: 220px;
+        height: 100px;
+    }
+
+    .titulo {
+        padding-left: 40px;
+        padding-top: 20px;
+        display: inline-block;
+        position: absolute;
+        z-index: 20;
+    }
+}
+
+.content_flex {
+    padding-top: 20px;
+    padding-left: 3%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+        height: 200px;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+
+    div {
+        max-width: 50%;
+    }
+}
+
+.contenedor_nosotros {
+    margin: 20px 0;
+}
+
+.content_inverso {
+    margin-left: 25%;
+}
+
+.imgnosotros {
+    margin-left: 100px;
+}
+
+#img_invert {
+    height: 300px;
+}
+
+.soloinverso {
+    display: flex;
+}
+
+.fondo_texto {
+    border-radius: 10px;
+    background-color: #da2b1740;
+    padding: 5px;
+    box-shadow: 10px 20px 30px -10px #7f0d00c2;
+
+    p {
+        color: #000;
+    }
+
+    h2 {
+        font-weight: 450;
+    }
+}

@@ -1,0 +1,18 @@
+/* scss/main.scss */
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'base/reset';
+@import 'base/typo';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/forms';
+@import 'layout/footer';
+@import 'components/navbar';
+@import 'components/nav-buttons';
+@import 'components/form-buttons';
+@import 'components/form-elements'; 
+@import 'views/nosotros';
+@import 'views/productos';
+@import 'views/contacto';
+@import 'views/blog';
+@import 'vendors/queris';

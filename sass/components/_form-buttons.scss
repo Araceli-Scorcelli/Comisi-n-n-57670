@@ -1,0 +1,21 @@
+@import '../utilities/variables';
+@import '../utilities/mixins';
+
+// Botón de submit para formularios
+.btn-submit {
+    @extend %btn-common;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: $hover-color;
+    }
+}

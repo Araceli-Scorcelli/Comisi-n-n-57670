@@ -1,0 +1,90 @@
+.grid_container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "prod_1 prod_2"
+    "prod_3 prod_4";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+
+    > * {
+        min-width: 200px;
+        min-height: 300px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+}
+
+.prod_1 {
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    .det_prod {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+        text-align: center;
+
+        p {
+            &.titulo_aux {
+                font-family: jost;
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #4A4A4A;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            }
+
+            &.precio {
+                font-size: 1.3em;
+                font-weight: bold;
+                color: #000;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+                margin-top: 5px;
+            }
+
+            &.descripcion {
+                font-size: 1em;
+                color: #333;
+                margin-top: 5px;
+                line-height: 1.5;
+                font-family: mono-ubuntu;
+            }
+        }
+
+        .img_estrella {
+            max-width: 25%;
+            height: auto;
+            margin-top: 10px;
+        }
+    }
+}
+
+
