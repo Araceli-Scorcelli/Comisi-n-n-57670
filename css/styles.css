@@ -48,7 +48,9 @@ body {
 
 .grid_container {
   display: grid;
-  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 30px;
   grid-template-areas: "prod_1 prod_2" "prod_3 prod_4";
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
@@ -122,6 +124,12 @@ body {
   max-width: 25%;
   height: auto;
   margin-top: 10px;
+}
+
+.prod_1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
 .container-fluid {
@@ -509,7 +517,9 @@ body {
 
 .swipes {
   display: grid;
-  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 50px;
   grid-template-areas: "prod_1 prod_2 prod_3 prod_4" "prod_5 prod_6 prod_7 prod_8" "prod_9 prod_10 prod_11 prod_12";
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
@@ -593,6 +603,12 @@ h2 {
   color: #333;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.sub_products:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
 }
 
 .banner_contacto {
