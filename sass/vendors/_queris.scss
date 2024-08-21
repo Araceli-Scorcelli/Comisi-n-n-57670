@@ -214,6 +214,43 @@
     }
 }
 
+@media (min-width: 401px) and (max-width: 450px) {
+    .grid_container {
+        grid-template-areas: 
+        "prod_1"
+        "prod_2"
+        "prod_3"
+        "prod_4";
+        grid-template-columns: 1fr;
+    }
+    .grid_container > * {
+        margin: 5px;
+    }
+
+    .sub_products{
+        .det_prod2 {
+            width: 90%;
+            bottom: 4px;
+            padding: 4px;
+            
+            p.titulo2{
+                font-size: 11px;
+            }
+
+            p.precio2 {
+                font-size: 9px;
+            }
+
+            p.descripcion2 {
+                font-size: 9px;
+            }
+        }
+    }    
+    .img_estrella {
+        max-width: 8%;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 819px) {
 
 .det_prod2 {
@@ -236,6 +273,7 @@
             }
         }
     }
+
 
 // Media Queries para footer
 @media (max-width: 1082px) {
@@ -404,5 +442,4 @@
         }
         
     }
-    
 }
