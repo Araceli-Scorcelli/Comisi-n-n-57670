@@ -517,7 +517,7 @@ body {
 
 .swipes {
   display: grid;
-  margin: 30px 5px;
+  margin: 30px 10px;
   gap: 50px;
   grid-template-areas: "prod_1 prod_2 prod_3 prod_4" "prod_5 prod_6 prod_7 prod_8" "prod_9 prod_10 prod_11 prod_12";
   grid-template-columns: repeat(4, 1fr);
@@ -858,7 +858,7 @@ h3 {
   .swipes {
     grid-template-areas: "prod_1 prod_2" "prod_3 prod_4" "prod_5 prod_6" "prod_7 prod_8" "prod_9 prod_10" "prod_11 prod_12";
     grid-template-columns: 1fr 1fr;
-    margin: 10px 5px;
+    margin: 20px 15px;
   }
   #img_invert {
     height: 200px;
